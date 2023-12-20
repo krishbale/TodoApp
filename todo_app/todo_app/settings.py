@@ -132,3 +132,14 @@ STATIC_ROOT  = os.path.join(BASE_DIR,'static')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# At the end of file. add these lines
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+MEDIA_URLS ='/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Also Make aure To set allowed_hosts to '*'
+
+ALLOWED_HOSTS = ['*']
