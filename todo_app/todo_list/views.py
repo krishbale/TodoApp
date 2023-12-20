@@ -1,13 +1,4 @@
-from django.shortcuts import render, redirect , get_object_or_404
-from .models import TodoItem
-from .forms import TodoForm
 
-
-
-def todo_list(request):
-    todos = TodoItem.objects.all()
-    
-    return render(request,'todo-list.html', { 'todos': todos})
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import TodoItem
 from .forms import TodoForm
